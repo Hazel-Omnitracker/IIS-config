@@ -1,0 +1,35 @@
+import subprocess
+#import win32com.shell.shell as shell
+#
+#subprocess.run("python --version", shell=True)
+#
+#commands = 'echo hi'
+#shell.ShellExecuteEx(lpVerb='runas', lpFile='cmd.exe', lpParameters='/c '+commands)
+
+subprocess.run("DISM /online /enable-feature /featurename:IIS-WebServerRole", shell=True)
+subprocess.run("DISM /online /enable-feature /featurename:IIS-WebServer", shell=True)
+subprocess.run("DISM /online /enable-feature /featurename:IIS-CommonHttpFeatures", shell=True)
+subprocess.run("DISM /online /enable-feature /featurename:IIS-HttpErrors", shell=True)
+subprocess.run("DISM /online /enable-feature /featurename:IIS-HttpRedirect", shell=True)
+subprocess.run("DISM /online /enable-feature /featurename:IIS-ApplicationDevelopment", shell=True)
+subprocess.run("DISM /online /enable-feature /featurename:IIS-Security", shell=True)
+subprocess.run("DISM /online /enable-feature /featurename:IIS-RequestFiltering", shell=True)
+subprocess.run("DISM /online /enable-feature /featurename:IIS-NetFxExtensibility", shell=True)
+subprocess.run("DISM /online /enable-feature /featurename:IIS-NetFxExtensibility45", shell=True)
+subprocess.run("DISM /online /enable-feature /featurename:IIS-HealthAndDiagnostics", shell=True)
+subprocess.run("DISM /online /enable-feature /featurename:IIS-HttpLogging", shell=True)
+subprocess.run("DISM /online /enable-feature /featurename:IIS-Performance", shell=True)
+subprocess.run("DISM /online /enable-feature /featurename:IIS-WebServerManagementTools", shell=True)
+subprocess.run("DISM /online /enable-feature /featurename:IIS-ManagementScriptingTools", shell=True)
+subprocess.run("DISM /online /enable-feature /featurename:IIS-StaticContent", shell=True)
+subprocess.run("DISM /online /enable-feature /featurename:IIS-DefaultDocument", shell=True)
+subprocess.run("DISM /online /enable-feature /featurename:IIS-DirectoryBrowsing", shell=True)
+subprocess.run("DISM /online /enable-feature /featurename:IIS-ISAPIExtensions", shell=True)
+subprocess.run("DISM /online /enable-feature /featurename:IIS-ISAPIFilter", shell=True)
+subprocess.run("DISM /online /enable-feature /featurename:IIS-ASPNET", shell=True)
+subprocess.run("DISM /online /enable-feature /featurename:IIS-ASPNET45", shell=True)
+subprocess.run("DISM /online /enable-feature /featurename:IIS-ASP", shell=True)
+subprocess.run("DISM /online /enable-feature /featurename:IIS-BasicAuthentication", shell=True)
+subprocess.run("DISM /online /enable-feature /featurename:IIS-HttpCompressionStatic", shell=True)
+subprocess.run("DISM /online /enable-feature /featurename:IIS-ManagementConsole", shell=True)
+subprocess.run("DISM /online /enable-feature /featurename:IIS-ManagementService", shell=True)
